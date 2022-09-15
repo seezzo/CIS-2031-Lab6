@@ -14,21 +14,19 @@ int max(int a, int b){
     }
 }
 
-//A function that returns the SMALLER of the two
-//parameters
-int min(int a, int b){
-    if ( a < b ){
-        return a;
-    } else {
-        return b;
-    }
-}
+// LAB QUESTION 3 - Write a function with an if statement
+
+//    (YOUR CODE HERE)
 
 
 void main(){
     cout << "Which is larger, 42 or 96? " << max(42, 96) << endl;
 
-    cout << "Which is smaller, 12 or 100? " << min(12, 100) << endl;
+    // LAB QUESTION 3 - Uncomment the next line
+    //cout << "Which is smaller, 12 or 100? " << min(12, 100) << endl;
+
+    //LAB QUESTION 5 - Comment out the next line
+    return;
 
     //Starting at zero, try each consecutive number until we
     //find the first number larger than 10;
@@ -42,13 +40,4 @@ void main(){
 
     cout << "Found it! " << guess << " is bigger than 10!" << endl;
 
-    //Starting at zero, try each consecutive number until we
-    //find the first number larger than 10;
-    guess = 0;
-    while( guess <= 10 ){
-        guess = guess + 1;
-        cout << guess << " is smaller than 10" << endl;
-    }
-
-    cout << "Found it! " << guess << " is bigger than 10!" << endl;
 }
