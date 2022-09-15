@@ -28,16 +28,18 @@ void main(){
     //LAB QUESTION 5 - Comment out the next line
     return;
 
-    //Starting at zero, try each consecutive number until we
-    //find the first number larger than 10;
-    int guess = 0;
+    //LAB QUESTIONS 6 & 7 is about this code:
+
+    //Starting at zero, count to 10
+    cout << "Couning to ten!" << endl;
+    int number = 0;
     tryTheNextNumber:
-    if ( guess <= 10 ){
-        guess = guess + 1;
-        cout << guess << " is smaller than 10" << endl;
+    if ( number <= 10 ){
+        cout << "In the loop, number = " << number << endl;
+        number = number + 1;
         goto tryTheNextNumber;
     }
 
-    cout << "Found it! " << guess << " is bigger than 10!" << endl;
+    cout << "I counted to ten, and the number variable = " << number << endl;
 
 }
